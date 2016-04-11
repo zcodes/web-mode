@@ -4,6 +4,13 @@ var cs = {completed: this.props.todo.completed,
 const f = (x) =>
   x + 1;
 
+var data = {
+  password: this.password
+}
+
+ajax.post('/signup')
+    .send(data)
+
 var str = "toto";
 
 'test/1'.match(/[a-z]+[0-9]+/g);
@@ -102,6 +109,15 @@ newB.firstMethod('x')
 var bar = 1;
 var foo = (bar == 1) ?
           "ONE" : "OTHER";  // THIS IS THE PROBLEM
+
+foo() {
+  bar()
+  baz()
+  if(true)
+    hello();
+  if (true)
+    hello();
+}
 
 function fieldIsValid( field, fieldSpec) {
   // todo: add remote possibility
